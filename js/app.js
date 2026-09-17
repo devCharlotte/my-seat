@@ -24,7 +24,7 @@ function initDefaults() {
   els.date.value = `${nowKst.getUTCFullYear()}-${String(nowKst.getUTCMonth()+1).padStart(2,'0')}-${String(nowKst.getUTCDate()).padStart(2,'0')}`;
   els.time.value = `${String(nowKst.getUTCHours()).padStart(2,'0')}:${String(nowKst.getUTCMinutes()).padStart(2,'0')}`;
 
-  fillSelect(els.busRoute, BUS_ROUTES.map(r=>({value:r.id,label:`${r.number} · ${r.subtitle}`})), '간선버스 선택');
+  fillSelect(els.busRoute, [...BUS_ROUTES].sort((a,b)=>Number(a.number)-Number(b.number)).map(r=>({value:r.id,label:`${r.number} · ${r.subtitle}`})), '간선버스 선택');
   els.busRoute.value='bus-160'; updateBusStops();
   fillSelect(els.ktxFrom, ALL_KTX_STATIONS, '탑승역');
   fillSelect(els.ktxTo, ALL_KTX_STATIONS, '도착역');
