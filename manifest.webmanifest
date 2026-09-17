@@ -1,0 +1,10 @@
+{
+  "name":"My Seat - 햇빛 덜 받는 좌석",
+  "short_name":"My Seat",
+  "start_url":"./",
+  "scope":"./",
+  "display":"standalone",
+  "background_color":"#f4f6f9",
+  "theme_color":"#eef3ff",
+  "icons":[{"src":"./assets/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}

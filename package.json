@@ -1,0 +1,8 @@
+{
+  "name": "my-seat",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node tests/run-tests.mjs"
+  }
+}
